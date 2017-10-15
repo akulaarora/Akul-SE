@@ -9,6 +9,6 @@ You will need to use pip to install cxfreeze. You will also need to run cxfreeze
 
 You can also obfuscate ScoreVulns.py before running cxfreeze using the following command:
 ```
-$ python -m compileall SetupVulns.py
+$ python -m compileall ScoreVulns.py
 ```
 From there, you can remove the .py and replace it with the generated .pyc file before running cxfreeze. ScoreVulns.py will otherwise be stored as a .py file in the dist folder. Not too much of a concern as it does not give away any vulnerabilities, but may provide hints (at image creator's discretion).

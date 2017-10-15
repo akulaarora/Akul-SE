@@ -26,12 +26,12 @@ def main(argv):
                 points += 1        
 
         # PHP Backdoor
-        if scorer.file_exists(******TODO*****):
+        if not scorer.file_exists("/xampp/htdocs/c99.php"):
                 html += "<p> - Removed php backdoor</p>"
                 points += 1
 
         # Remove filezilla add-on
-        if scorer.score_file("/Users/CAAdmin/AppData/Roaming/Mozilla/Firefox/Profiles/****TODO****/extensions.json", "chatzilla", True):
+        if scorer.score_file("/Users/CAAdmin/AppData/Roaming/Mozilla/Firefox/Profiles/813chinz.default/extensions.json", "chatzilla", True):
                 html += "<p> - Removed potentially unwanted chatzilla add-on</p>"
                 points += 1                
 
@@ -48,7 +48,7 @@ def main(argv):
         
         # Append last part of html and write to file
         html += "<p>Score: " + str(points) + "/7 </p>" + "</html>"
-        with open("FTP_SE.html", "w") as html_file:
+        with open("AKUL_SE.html", "w") as html_file:
                 html_file.write(html)
 
 

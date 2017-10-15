@@ -90,7 +90,7 @@ def score_file(filename, scored_value, no_exist = False):
 
     return vuln_fixed
         
-def file_exists(filename)
+def file_exists(filename):
     """
     Used for scoring (or simply checking) if a file exists.
 

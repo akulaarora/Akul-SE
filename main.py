@@ -9,7 +9,8 @@ def main(argv):
         html = """<html>
         <h1>Akul's Scoring Engine (for In Class Competition 2017)</h1>
         """
-
+        
+        # TODO: Poorly written
         # Score anonymous filezilla
         if scorer.score_file(filezilla_file, "anonymous", True):
                 html += "<p> - Anonymous access is unpermitted</p>"

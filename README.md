@@ -14,6 +14,6 @@ $ python -m compileall ScoreVulns.py
 From there, you can remove the .py and replace it with the generated .pyc file before running cxfreeze. ScoreVulns.py will otherwise be stored as a .py file in the dist folder. Not too much of a concern as it does not give away any vulnerabilities, but may provide hints (at image creator's discretion).
 
 ## Modifying the repository
-If you have questions, please contact Akul. Please DO NOT modify the "ScoreVulns.py" file without contacting Akul first (instructions on modification will be provided).
+If you have questions, please contact Akul. If you would like to contribute to this project, please fork this project and create a pull request once changes have been made. Developer access will be granted to anyone who actively wishes to continue developing this.
 
 After rounds are over, please add to folder for previous rounds. This will act as future reference for anyone else.

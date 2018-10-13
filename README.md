@@ -5,7 +5,9 @@ Use the following command to compile into executable (makes code unreadable and 
 ```
 $ cxfreeze main.py --target-dir dist
 ```
-You will need to use pip to install cxfreeze. You will also need to run cxfreeze-postinstall to install it before you can use it.
+Python version: 3.6
+
+You will need to use pip to install cxfreeze and pywin32. You will also need to run cxfreeze-postinstall to install cxfreeze before you can use it.
 
 You can also obfuscate akul_se.py before running cxfreeze using the following command:
 ```

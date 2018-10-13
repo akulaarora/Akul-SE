@@ -75,7 +75,7 @@ class applications:
         vuln_fixed = False
         
         #This will close the script if it detects someone deleted the file. If they did and the script ran, it would complain and display the line with the error (which contains the answer).
-        if not file_exists(filename):
+        if not applications.file_exists(filename):
             print("GA1643") # Obfuscates for student. Can be used for debugging.
             return False # Exits function. TODO: May be better method.
 
@@ -131,8 +131,9 @@ class applications:
 
         if info == 'No Version Information Available':
             info = None
+        return info
 
-    def check_version(path, version):
+    def check_file_version(path, version):
         """
         Used for checking if the version of a program is correct.
 
@@ -144,11 +145,11 @@ class applications:
 
         Returns - boolean (true if matches)
         """
-        if get_file_version(path) == version:
+        if applications.get_file_version(path) == version:
             return True
         return False
 
-def forensics(answer, forensics_file, q_num, code):
+def forensics(answer, forensics_file):
         """
         TODO
         """
